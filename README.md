@@ -43,7 +43,7 @@ This wiring requires no modification to the code, but if you're using a differen
 
 - Install the esp32 Arduino libraries: follow instruction from [the repository's Readme](https://github.com/espressif/arduino-esp32#installation-instructions)
 
-**Make sure the Wemos R32 board is added to Arduino Board Manager**
+**Add ESP32 boards to Arduino Board Manager**
 
 To check, from the top menu, go to `File > Preferences`. In the `Settings` tab, there should be this link `https://dl.espressif.com/dl/package_esp32_index.json` in the `Additional Board Manager URLs`. If not, insert the link there, then go to `Tools > Board > Boards Manager`, search for `esp32` and install.
 
@@ -51,23 +51,27 @@ Now in `Tools > Boards` you should be able to see `ESP32 Dev Module` in the list
 
 **Calibrate the load cell & flash the scale sketch**
 
-The calibration is needed only once to figure out the CALIBRATION_FACTOR that is specific to your load cell. To do this, follow instruction in the `./SparkFun_HX711_Calibration/SparkFun_HX711_Calibration.ino` file
+The calibration is needed only once to figure out the CALIBRATION_FACTOR that is specific to your load cell. To do this, follow instruction in this file: `./SparkFun_HX711_Calibration/SparkFun_HX711_Calibration.ino`
 
-After that, update the `CALIBRATION_FACTOR` number in `coffee_scale_btserial/coffee_scale_btserial.ino` file. Flash your Wemos with that value. You should now have a Bluetooth device named `Coffee Scale` that constantly writes to the Bluetooth Serial connection readings of the scale.
+Then, update `CALIBRATION_FACTOR` number in `coffee_scale_btserial/coffee_scale_btserial.ino`.
+
+Finally flash your Wemos again with `coffee_scale_btserial/coffee_scale_btserial.ino`.
+
+Now the scale readings can be access via a Bluetooth Serial connection with the device "CoffeeScale".
 
 ## Web interface
 
-Make sure you have NodeJS install, and have the Wemos powered on beforehand.
+Power on the Wemos.
 
-The software will prompt for your sudo password, since it would need access to the computer's Bluetooth device. **Make sure you know what the code is doing before running this command. I won't be responsible for any damage or security breach if they happen because of this.**
+When starting the web application, you will be prompted for sudo password, which is needed for the backend to access the computer's Bluetooth device. **Because of that, make sure you know what the code is doing before running this command. I won't be responsible for any possible damage to your computer or security breach.**
 
 Once the application started, the app will opens the link `http://localhost:8080` automatically in your web browser after successfully connected to the Wemos board.
 
 ```
-# Enter the ./web directory
+# enter ./web directory
 cd ./web
 
-# Install the dependencies
+# install dependencies
 npm i
 
 # build the frontend and start the web application.
