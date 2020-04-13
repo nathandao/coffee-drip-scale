@@ -28,14 +28,14 @@ You'll need to have these software installed:
 
 ## Hardware setup
 
-**Wiring**
+**1. Wiring**
 
 This wiring requires no modification to the code, but if you're using a different wiring, make sure pin numbers are updated accordingly in the Arduino sketches.
 
 ![wiring](./wiring.jpg)
 
 
-** Installed the necessary libraries:
+**2. Install Arduino Libraries:**
 
 - HX711: Download the Arduino HX711 library by downloading the zip file code from here. Open Arduino IDE, go to menu `Sketch > Include Library > Add .ZIP Library > choose the HX711 zip file`.
 
@@ -47,7 +47,7 @@ To check, from the top menu, go to `File > Preferences`. In the `Settings` tab, 
 
 Now in `Tools > Boards` you should be able to see `ESP32 Dev Module` in the list. Select it.
 
-**Calibrate the load cell**
+**3. Calibrate the load cell & flash the scale sketch**
 
 The calibration is needed only once to figure out the CALIBRATION_FACTOR that is specific to your load cell. To do this, follow instruction in the `./SparkFun_HX711_Calibration/SparkFun_HX711_Calibration.ino` file
 
