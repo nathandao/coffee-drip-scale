@@ -14,7 +14,7 @@ This repository contains both the code for hardware and the web interface for th
 
 - [A load cell](https://www.amazon.de/Tragbarer-Elektronischer-W%C3%A4gezelle-HX711-Gewicht-Raspberry/dp/B076PYX5DW/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=1kg+loadcell&qid=1586778094&sr=8-1): Usually these come with a load cell amplifier (the HX711), so you may not need to buy them separately.
 
-- [HX711](https://www.sparkfun.com/products/13879): load cell amplifier. As the name suggests, it amplifies tiny currents coming from the the load cell make it possible for th eWemos R32 to read the signal.
+- [HX711](https://circuits4you.com/wp-content/uploads/2016/11/Hx711-Module-Arduino.jpg): load cell amplifier. As the name suggests, it amplifies tiny currents coming from the the load cell make it possible for th eWemos R32 to read the signal.
 
 - A laptop with bluetooth connection to run the web interface. The Wemos R32 is going to send its data to the web backend via Bluetooth Serial.
 
