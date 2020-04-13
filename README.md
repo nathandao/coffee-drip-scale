@@ -4,9 +4,9 @@ A bluetooth scale to keep track of your hand brew coffee.
 
 This repository contains both the code for hardware and the web interface for the scale.
 
-![demo](https://github.com/nathandao/coffee-drip-scale/master/demo.png)
+![demo](./demo.png)
 
-[Video Version](https://github.com/nathandao/coffee-drip-scale/master/demo.mp4)
+![Video Version](./demo.mp4)
 
 ## Components:
 
@@ -32,7 +32,7 @@ You'll need to have these software installed:
 
 This wiring requires no modification to the code, but if you're using a different wiring, make sure pin numbers are updated accordingly in the Arduino sketches.
 
-![wiring](https://github.com/nathandao/coffee-drip-scale/master/wiring.jpg)
+![wiring](./wiring.jpg)
 
 
 ** Installed the necessary libraries:
