@@ -6,7 +6,7 @@ This repository contains both the code for hardware and the web interface for th
 
 ![demo](./demo.png)
 
-![Video Version](./demo.mp4)
+[Video Version](https://gifs.com/gif/coffee-scale-E8m5DY)
 
 ## Components:
 
