@@ -1,6 +1,8 @@
 # Bluetooth Coffee Drip Scale
 
-A bluetooth scale to keep track of your hand brew coffee.
+A bluetooth scale to keep track of your hand brew process. This may be useful if you're brewing your coffee with a V60, Chemex, etc...
+
+**Disclaimer: As this is a tinkering project it is not meant for production use, and so far has only been tested a few times on my Linux machine. By following the instructions here, you agree that I am not responsible to any damage done in any form, including your coffee :D**
 
 This repository contains both the code for hardware and the web interface for the scale.
 
@@ -57,7 +59,7 @@ After that, update the `CALIBRATION_FACTOR` number in `coffee_scale_btserial/cof
 
 Make sure you have NodeJS install, and have the Wemos powered on beforehand.
 
-The software will prompt for your sudo password, since it would need access to the computer's Bluetooth device. **Make sure you know what the code is doing before running this command. This is only a tinkering project and not meant for production use, so I won't be responsible for any damage or security breach if they happen**
+The software will prompt for your sudo password, since it would need access to the computer's Bluetooth device. **Make sure you know what the code is doing before running this command. I won't be responsible for any damage or security breach if they happen because of this.**
 
 Once the application started, the app will opens the link `http://localhost:8080` automatically in your web browser after successfully connected to the Wemos board.
 
