@@ -63,8 +63,6 @@ Now the scale readings can be access via a Bluetooth Serial connection with the 
 
 Power on the Wemos.
 
-When starting the web application, you will be prompted for sudo password, which is needed for the backend to access the computer's Bluetooth device. **Because of that, make sure you know what the code is doing before running this command. I won't be responsible for any possible damage to your computer or security breach.**
-
 Once the application started, the app will opens the link `http://localhost:8080` automatically in your web browser after successfully connected to the Wemos board.
 
 ```

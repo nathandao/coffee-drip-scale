@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently 'sudo `which node` ble.js' 'npx serve ./dist/release -p 8080'",
-    "dev": "concurrently 'sudo `which node` ble.js' 'parcel index.html --port 8080 --out-dir dist/dev'",
+    "start": "concurrently 'node ble.js' 'npx serve ./dist/release -p 8080'",
+    "dev": "concurrently 'node ble.js' 'parcel index.html --port 8080 --out-dir dist/dev'",
     "build": "parcel build index.html --out-dir dist/release"
   },
   "keywords": [],
